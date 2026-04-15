@@ -1,0 +1,950 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приватна школа "Ай Діти"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar bg-white fixed-top shadow-sm py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#main"><img src="{% static 'main/images/logo.png' %}" height="50" alt="Logo" /></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header p-4">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Меню</h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body p-4">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-2">
+              <li class="nav-item">
+                <a class="nav-link custom-off-link active" href="#main">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-off-link" href="#about">Про ліцей</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-off-link" href="#philosophy">Філософія</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-off-link" href="#programs">Програми</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-off-link" href="#advantages">Переваги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-off-link" href="#safety">Безпека</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-off-link" href="#contact">Звʼязок</a>
+              </li>
+            </ul>
+            <div class="mt-5">
+              <a href="#contact-us" class="btn btn-primary-footer w-100 py-3 rounded-4" data-bs-dismiss="offcanvas">Записатися</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div style="margin-top: 80px;"></div>
+
+    <section id="main" class="hero-section text-white d-flex align-items-center position-relative min-vh-100">
+      <div class="container position-relative z-index-1">
+        <div class="d-flex align-items-center mb-4">
+          <div class="hero-line me-3"></div>
+          <span class="text-uppercase small-text text-orange">Приватний ліцей</span>
+        </div>
+
+        <div class="hero-logo-wrapper mb-4">
+          <img src="{% static 'main/images/logo.png' %}" alt="Логотип АйДіти" class="img-fluid hero-logo" />
+        </div>
+
+        <div class="row">
+          <div class="col-lg-7">
+            <h1 class="hero-title mb-4">Освітній простір розвитку, підтримки та можливостей</h1>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 mt-2">
+          <span class="hero-tag">1–4 клас</span>
+          <span class="hero-tag">5–9 клас</span>
+          <span class="hero-tag">10–11 клас</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down-btn text-white text-decoration-none position-absolute bottom-0 start-50 translate-middle-x mb-4 d-flex flex-column align-items-center">
+        <span class="text-uppercase small-text mb-2">Дізнатися більше</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </a>
+    </section>
+
+    <section id="about" class="py-5 bg-white position-relative">
+      <div class="container py-5">
+        <div class="row align-items-start">
+          <div class="col-lg-6 pe-lg-5">
+            <div class="d-flex align-items-center mb-3">
+              <div class="section-line-blue me-2"></div>
+              <span class="text-uppercase text-info fw-bold small-text">Про ліцей</span>
+            </div>
+
+            <h2 class="display-5 fw-bold mb-4">Освітній простір <span class="text-info">розвитку</span>, підтримки та можливостей</h2>
+
+            <p class="text-muted mb-4">Приватний ліцей «Ай Діти» — це сучасний ліцензований освітній заклад повної загальної середньої освіти для дітей 1–11 класів, створений як простір розвитку, підтримки та можливостей.</p>
+
+            <p class="text-muted mb-5">Тут дитина не просто навчається. Вона досліджує, ставить запитання, пробує нове, помиляється і знову пробує — і саме так поступово відкриває власні здібності.</p>
+
+            <div class="approach-card p-4 rounded-4 shadow-sm">
+              <p class="fw-bold mb-2">Наш підхід — це не випадкові результати.</p>
+              <p class="small text-muted mb-0">
+                Це системна робота, де кожен елемент має значення:
+                <span class="text-info fw-bold">знання</span> +
+                <span class="text-warning fw-bold">навички</span> +
+                <span class="text-success fw-bold">розвиток особистості</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="position-relative mb-4">
+              <img src="{% static 'main/images/2.jpg' %}" alt="Сучасний клас" class="img-fluid rounded-5 shadow-lg" />
+            </div>
+
+            <ul class="list-unstyled advantage-list mt-4">
+              <li class="d-flex align-items-start mb-3">
+                <span class="dot-item bg-blue mt-2 me-3"></span>
+                <span>Сильні академічні знання, які формують фундамент для майбутнього</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="dot-item bg-yellow mt-2 me-3"></span>
+                <span>Розвиток мислення, щоб дитина не заучувала, а розуміла</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="dot-item bg-green mt-2 me-3"></span>
+                <span>Формування характеру, відповідальності та самостійності</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="dot-item bg-blue mt-2 me-3"></span>
+                <span>Сучасні методики навчання, що роблять навчання живим і цікавим</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="dot-item bg-red mt-2 me-3"></span>
+                <span>Безпечні умови, які забезпечують спокій і впевненість</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <span class="dot-item bg-green mt-2 me-3"></span>
+                <span>Стабільність навчального процесу, незалежно від зовнішніх обставин</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="py-5 bg-white position-relative">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 pe-lg-5">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-line me-2" style="width: 30px; background-color: #f7a100;"></div>
+              <span class="text-uppercase text-warning fw-bold small-text">Навчання</span>
+            </div>
+
+            <h2 class="display-5 fw-bold mb-4">Як навчаються діти <span class="text-warning">в нашому ліцеї</span></h2>
+
+            <p class="text-muted mb-5">Ми організували навчальний процес так, щоб кожна дитина була у фокусі уваги та отримувала підтримку тоді, коли вона потрібна.</p>
+
+            <ul class="list-unstyled learning-list mb-5">
+              <li class="d-flex align-items-start mb-3 text-muted">
+                <span class="dot-item bg-yellow mt-2 me-3"></span>
+                <span>Класи до 15 учнів — для якісної взаємодії</span>
+              </li>
+              <li class="d-flex align-items-start mb-3 text-muted">
+                <span class="dot-item bg-yellow mt-2 me-3"></span>
+                <span>Повний навчальний день без перевантаження вдома</span>
+              </li>
+              <li class="d-flex align-items-start mb-3 text-muted">
+                <span class="dot-item bg-yellow mt-2 me-3"></span>
+                <span>Виконання домашніх завдань у школі</span>
+              </li>
+              <li class="d-flex align-items-start mb-3 text-muted">
+                <span class="dot-item bg-yellow mt-2 me-3"></span>
+                <span>Регулярний контроль результатів</span>
+              </li>
+              <li class="d-flex align-items-start text-muted">
+                <span class="dot-item bg-yellow mt-2 me-3"></span>
+                <span>Постійний зворотний зв'язок для батьків</span>
+              </li>
+            </ul>
+
+            <img src="{% static 'main/images/3.jpg' %}" alt="Учні займаються робототехнікою" class="img-fluid rounded-5 shadow-lg" />
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <p class="text-muted mb-5">Навчання в нашому ліцеї — це не лише уроки. Це цілісний підхід до розвитку:</p>
+
+            <div class="row g-4 mb-5">
+              <div class="col-sm-6">
+                <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                  <img src="{% static 'main/images/icons/icons8-layers-48(2).png' %}" alt="Інтегровані заняття" width="32" height="32" class="mb-3" />
+                  <p class="mb-0 fw-semibold small text-dark">Інтегровані заняття</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                  <img src="{% static 'main/images/icons/icons8-lightbulb-48.png' %}" alt="Практичні завдання" width="32" height="32" class="mb-3" />
+                  <p class="mb-0 fw-semibold small text-dark">Практичні завдання</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                  <img src="{% static 'main/images/icons/icons8-open-book-48(2).png' %}" alt="Дослідницька діяльність" width="32" height="32" class="mb-3" />
+                  <p class="mb-0 fw-semibold small text-dark">Дослідницька діяльність</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                  <img src="{% static 'main/images/icons/icons8-people-64.png' %}" alt="Робота в командах" width="36" height="36" class="mb-3" />
+                  <p class="mb-0 fw-semibold small text-dark">Робота в командах</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                  <img src="{% static 'main/images/icons/icons8-graduation-cap-48.png' %}" alt="Створення власних проєктів" width="34" height="34" class="mb-3" />
+                  <p class="mb-0 fw-semibold small text-dark">Створення власних проєктів</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                  <img src="{% static 'main/images/icons/icons8-presentation-screen-48.png' %}" alt="Презентації ідей" width="32" height="32" class="mb-3" />
+                  <p class="mb-0 fw-semibold small text-dark">Презентації ідей</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quote-block p-5 rounded-5 bg-dark text-white shadow-lg">
+              <p class="display-5 fw-bold mb-4">Діти вчаться не просто знати</p>
+
+              <div class="hero-line mb-4" style="width: 30px; background-color: white;"></div>
+
+              <p class="h3 fw-light text-warning italic-text">вони вчаться думати.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-line me-2" style="width: 30px; background-color: #91b422;"></div>
+              <span class="text-uppercase fw-bold small-text" style="color: #91b422;">Філософія</span>
+            </div>
+            <h2 class="display-5 fw-bold mb-4">Кожна дитина — <span style="color: #91b422;">унікальна</span></h2>
+            <p class="text-muted mb-4">Ми переконані: кожна дитина має свої здібності, свої сильні сторони і власний шлях розвитку.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <div class="p-3 bg-light rounded text-center small border">Свій темп навчання</div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded text-center small border">Свої інтереси</div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded text-center small border">Власні сильні сторони</div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded text-center small border">Потребує підтримки</div>
+              </div>
+            </div>
+            <div class="p-4 rounded-4 border" style="background-color: rgba(145, 180, 34, 0.1); border-color: rgba(145, 180, 34, 0.2);">
+              <p class="fw-bold mb-1">Ми не формуємо однакових дітей.</p>
+              <p class="small text-muted mb-0">Ми допомагаємо кожному знайти свою силу.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div class="d-flex align-items-center mb-4">
+            <div class="hero-line me-2" style="width: 30px;"></div>
+            <span class="text-uppercase fw-bold small-text" style="color: #f7a100;">Наші цінності</span>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md">
+              <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                <div class="bg-blue mb-3" style="width: 8px; height: 8px; border-radius: 50%;"></div>
+                <p class="fw-bold text-info mb-2">Повага до дитини</p>
+                <p class="small text-muted">Ми чуємо дітей, враховуємо їх потреби та створюємо атмосферу довіри.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                <div class="bg-yellow mb-3" style="width: 8px; height: 8px; border-radius: 50%;"></div>
+                <p class="fw-bold text-warning mb-2">Розвиток мислення</p>
+                <p class="small text-muted">Ми навчаємо не заучувати інформацію, а розуміти її. Діти вчаться аналізувати та приймати рішення.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                <div class="bg-green mb-3" style="width: 8px; height: 8px; border-radius: 50%;"></div>
+                <p class="fw-bold text-success mb-2">Відповідальність</p>
+                <p class="small text-muted">Ми допомагаємо формувати характер і здатність доводити справи до результату.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                <div class="bg-red mb-3" style="width: 8px; height: 8px; border-radius: 50%;"></div>
+                <p class="fw-bold text-danger mb-2">Підтримка</p>
+                <p class="small text-muted">Ми поруч у складні моменти — пояснюємо, допомагаємо, мотивуємо.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="learning-card p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-start bg-light">
+                <div class="bg-blue mb-3" style="width: 8px; height: 8px; border-radius: 50%;"></div>
+                <p class="fw-bold text-info mb-2">Результат</p>
+                <p class="small text-muted">Ми працюємо системно і послідовно, щоб знання були реальними і відчутними.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="d-flex align-items-center mb-3">
+          <div class="hero-line me-2" style="width: 30px; background-color: #30bee6;"></div>
+          <span class="text-uppercase fw-bold small-text text-info">Програми навчання</span>
+        </div>
+        <h2 class="display-5 fw-bold mb-3">Повна загальна середня освіта</h2>
+        <p class="text-muted mb-5">Три ступені навчання, кожен із яких має свої цілі та методики.</p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="learning-card p-4 h-100 rounded-4 border-info-outline">
+              <span class="text-info fw-bold small-text d-block mb-2">1–4 клас</span>
+              <h3 class="h4 fw-bold mb-2">Початкова школа</h3>
+              <p class="small text-info mb-4 fw-medium">Фундамент майбутніх досягнень</p>
+              <p class="small text-muted mb-4">Саме тут формується ставлення до навчання, впевненість у собі та базові академічні навички.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-info me-2" style="width:6px;height:6px;border-radius:50%"></span> Програма НУШ
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-info me-2" style="width:6px;height:6px;border-radius:50%"></span> Методика РОСТОК
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-info me-2" style="width:6px;height:6px;border-radius:50%"></span> Розвиток мовлення
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-info me-2" style="width:6px;height:6px;border-radius:50%"></span> Логічне мислення
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="bg-info me-2" style="width:6px;height:6px;border-radius:50%"></span> Дослідницькі завдання
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="learning-card p-4 h-100 rounded-4 border-warning-outline">
+              <span class="text-warning fw-bold small-text d-block mb-2">5–9 клас</span>
+              <h3 class="h4 fw-bold mb-2">Середня школа</h3>
+              <p class="small text-warning mb-4 fw-medium">Час формування характеру</p>
+              <p class="small text-muted mb-4">У середній школі дитина активно змінюється. Ми допомагаємо розвивати відповідальність і самостійність.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-warning me-2" style="width:6px;height:6px;border-radius:50%"></span> Поглиблена математика
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-warning me-2" style="width:6px;height:6px;border-radius:50%"></span> Академічна англійська
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-warning me-2" style="width:6px;height:6px;border-radius:50%"></span> Природничі науки
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-warning me-2" style="width:6px;height:6px;border-radius:50%"></span> Критичне мислення
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="bg-warning me-2" style="width:6px;height:6px;border-radius:50%"></span> Цифрові навички
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="learning-card p-4 h-100 rounded-4 border-success-outline">
+              <span class="text-success fw-bold small-text d-block mb-2">10–11 клас</span>
+              <h3 class="h4 fw-bold mb-2">Старша школа</h3>
+              <p class="small text-success mb-4 fw-medium">Усвідомлений вибір майбутнього</p>
+              <p class="small text-muted mb-4">Старша школа — це період стратегічних рішень. Ми допомагаємо підліткам визначити свій шлях.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-success me-2" style="width:6px;height:6px;border-radius:50%"></span> Підготовка до НМТ
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-success me-2" style="width:6px;height:6px;border-radius:50%"></span> Академічна підтримка
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-success me-2" style="width:6px;height:6px;border-radius:50%"></span> Профорієнтація
+                </li>
+                <li class="mb-2 d-flex align-items-center">
+                  <span class="bg-success me-2" style="width:6px;height:6px;border-radius:50%"></span> Формування портфоліо
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="bg-success me-2" style="width:6px;height:6px;border-radius:50%"></span> Навички самопрезентації
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="d-flex align-items-center mb-3">
+          <div class="hero-line me-2" style="width: 30px; background-color: #30bee6;"></div>
+          <span class="text-uppercase fw-bold small-text text-info">Наші сильні сторони</span>
+        </div>
+        <h2 class="display-5 fw-bold mb-3">Те, що формує <span class="text-info">результат</span></h2>
+        <p class="text-muted mb-5 col-lg-8">Комплексний підхід, який забезпечує якісну освіту та всебічний розвиток.</p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-blue-light text-info p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-user-account-64.png' %}" alt="Малокомплектні класи" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Малокомплектні класи</h4>
+                <p class="small text-muted mb-0">Кожна дитина у фокусі уваги.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-yellow-light text-warning p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-customer-64.png' %}" alt="Індивідуальний підхід" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Індивідуальний підхід</h4>
+                <p class="small text-muted mb-0">Навчання враховує можливості дитини.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-green-light text-success p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-open-book-48(2).png' %}" alt="Сильна академічна база" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Сильна академічна база</h4>
+                <p class="small text-muted mb-0">Математика, англійська, природничі науки.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-blue-light text-info p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-globe-64.png' %}" alt="Поглиблена англійська" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Поглиблена англійська</h4>
+                <p class="small text-muted mb-0">Рівень випускників — B1-C1.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-yellow-light text-warning p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-layers-48_yellow.png' %}" alt="Проєктне навчання" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Проєктне навчання</h4>
+                <p class="small text-muted mb-0">Навчання через досвід.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-red-light text-danger p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-heart-48.png' %}" alt="Soft Skills" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Soft Skills</h4>
+                <p class="small text-muted mb-0">Навички життя.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-green-light text-success p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-compass-48.png' %}" alt="Профорієнтація" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Профорієнтація</h4>
+                <p class="small text-muted mb-0">Розуміння майбутнього.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-yellow-light text-warning p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-thunder-48.png' %}" alt="Енергонезалежність" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Енергонезалежність</h4>
+                <p class="small text-muted mb-0">Стабільне навчання.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="strength-card learning-card p-4 d-flex align-items-start rounded-4 shadow-sm h-100">
+              <div class="icon-box me-3 bg-red-light text-danger p-3 rounded-3">
+                <img src="{% static 'main/images/icons/icons8-shield-48.png' %}" alt="Безпечне середовище" width="28" />
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1">Безпечне середовище</h4>
+                <p class="small text-muted mb-0">Власне укриття.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-5">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-line me-2" style="width: 30px; background-color: #f7a100;"></div>
+              <span class="text-uppercase fw-bold small-text text-orange">Додаткові студії</span>
+            </div>
+            <h2 class="display-5 fw-bold mb-3">Розвиток <span class="text-orange">після уроків</span></h2>
+            <p class="text-muted mb-5">Після основних занять діти мають можливість розвивати свої інтереси у додаткових студіях.</p>
+
+            <div class="studio-list">
+              <div class="d-flex align-items-start mb-4">
+                <div class="icon-box me-3 bg-blue-light text-info p-3 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-paint-palette-48.png' %}" alt="Творчі студії" width="28" />
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Творчі студії</h4>
+                  <p class="small text-muted mb-0">Малювання, декоративна творчість, розвиток уяви</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-4">
+                <div class="icon-box me-3 bg-yellow-light text-warning p-3 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-chess-48.png' %}" alt="Шахова студія" width="28" />
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Шахова студія</h4>
+                  <p class="small text-muted mb-0">Розвиток логіки та стратегічного мислення</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-4">
+                <div class="icon-box me-3 bg-green-light text-success p-3 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-theatre-50.png' %}" alt="Акторська студія" width="28" />
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Акторська студія</h4>
+                  <p class="small text-muted mb-0">Розвиток мовлення, впевненості та самовираження</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <div class="icon-box me-3 bg-red-light text-danger p-3 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-gym-50.png' %}" alt="Спортивні напрямки" width="28" />
+                </div>
+                <div>
+                  <h4 class="h6 fw-bold mb-1">Спортивні напрямки</h4>
+                  <p class="small text-muted mb-0">Рух, дисципліна, здоров'я</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-7">
+                <div class="studio-img-wrapper main-img">
+                  <img src="{% static 'main/images/studio_main.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Головне фото студії" />
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="d-flex flex-column gap-3 h-100">
+                  <div class="studio-img-wrapper small-img flex-grow-1">
+                    <img src="{% static 'main/images/studio_small1.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Заняття" />
+                  </div>
+                  <div class="studio-img-wrapper small-img flex-grow-1">
+                    <img src="{% static 'main/images/studio_small2.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Творчість" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-line me-2" style="width: 30px; background-color: #91b422;"></div>
+              <span class="text-uppercase fw-bold small-text text-success">Результати</span>
+            </div>
+
+            <h2 class="display-5 fw-bold mb-4">Що отримує дитина <span class="text-success">в нашому ліцеї</span></h2>
+
+            <p class="text-muted mb-5 pe-lg-5">Ми прагнемо, щоб через кілька років навчання дитина стала:</p>
+
+            <div class="row g-2 mb-5 list-grid">
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-pill border d-flex align-items-center h-100 results-badge">
+                  <span class="dot-item bg-success me-2"></span>
+                  <span class="small fw-medium text-muted">Впевненою у собі</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-pill border d-flex align-items-center h-100 results-badge">
+                  <span class="dot-item bg-success me-2"></span>
+                  <span class="small fw-medium text-muted">Самостійною</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-pill border d-flex align-items-center h-100 results-badge">
+                  <span class="dot-item bg-success me-2"></span>
+                  <span class="small fw-medium text-muted">Відповідальною</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-pill border d-flex align-items-center h-100 results-badge">
+                  <span class="dot-item bg-success me-2"></span>
+                  <span class="small fw-medium text-muted">Здатною мислити</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-pill border d-flex align-items-center h-100 results-badge">
+                  <span class="dot-item bg-success me-2"></span>
+                  <span class="small fw-medium text-muted">Відкритою до нового</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-pill border d-flex align-items-center h-100 results-badge">
+                  <span class="dot-item bg-success me-2"></span>
+                  <span class="small fw-medium text-muted">Готовою до викликів</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dark-box p-4 rounded-5 bg-dark text-white shadow-lg results-dark-box">
+              <h3 class="h5 fw-bold mb-3 text-white">Наші учні:</h3>
+
+              <ul class="list-unstyled custom-list text-white mb-4">
+                <li class="mb-2 d-flex align-items-start">
+                  <span class="dot-item bg-success mt-1 me-3"></span>
+                  Вміють працювати в команді
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <span class="dot-item bg-success mt-1 me-3"></span>
+                  Презентують свої ідеї
+                </li>
+                <li class="mb-2 d-flex align-items-start">
+                  <span class="dot-item bg-success mt-1 me-3"></span>
+                  Створюють власні проєкти
+                </li>
+                <li class="d-flex align-items-start">
+                  <span class="dot-item bg-success mt-1 me-3"></span>
+                  Розуміють, як застосовувати знання
+                </li>
+              </ul>
+
+              <div class="hero-line mb-3" style="width: 30px; background-color: white;"></div>
+
+              <p class="h7 fw-normal text-warning italic-text pe-lg-3">Ми навчаємо не лише предметів. Ми формуємо особистість.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 ps-lg-5">
+            <div class="img-wrapper rounded-5 overflow-hidden shadow-lg school-results-photo school-photo-tall">
+              <img src="{% static 'main/images/4.jpg' %}" class="img-fluid" alt="Сучасний інтер'єр ліцею" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container py-5 text-center">
+        <div class="d-flex justify-content-center align-items-center mb-3">
+          <div class="hero-line me-2" style="width: 30px; background-color: #30bee6;"></div>
+          <span class="text-uppercase fw-bold small-text text-info">Досвід дитини</span>
+          <div class="hero-line ms-2" style="width: 30px; background-color: #30bee6;"></div>
+        </div>
+
+        <h2 class="display-5 fw-bold mb-4">Як це відчуває <span class="text-info">дитина</span></h2>
+
+        <p class="text-muted mb-5 mx-auto" style="max-width: 600px;">Для нас важливо не лише те, що дитина вивчає, а й те, як вона почувається у школі.</p>
+
+        <div class="experience-interactive-grid mb-5">
+          <div class="learning-card p-3 d-flex align-items-center justify-content-center gap-3 rounded-4 shadow-sm">
+            <img src="{% static 'main/images/icons/icons8-stars-50.png' %}" alt="Цікавість" width="24" /> <span class="fw-bold text-nowrap">Приходить із цікавістю</span>
+          </div>
+
+          <div class="learning-card p-3 d-flex align-items-center justify-content-center gap-3 rounded-4 shadow-sm">
+            <img src="{% static 'main/images/icons/icons8-user-account-64_yellow.png' %}" alt="Команда" width="28" /> <span class="fw-bold text-nowrap">Працює в команді</span>
+          </div>
+
+          <div class="learning-card p-3 d-flex align-items-center justify-content-center gap-3 rounded-4 shadow-sm">
+            <img src="{% static 'main/images/icons/icons8-question-64.png' %}" alt="Запитання" width="28" /> <span class="fw-bold text-nowrap">Ставить запитання</span>
+          </div>
+
+          <div class="learning-card p-3 d-flex align-items-center justify-content-center gap-3 rounded-4 shadow-sm">
+            <img src="{% static 'main/images/icons/icons8-rocket-48.png' %}" alt="Нове" width="28" /> <span class="fw-bold text-nowrap">Пробує нове</span>
+          </div>
+
+          <div class="learning-card p-3 d-flex align-items-center justify-content-center gap-3 rounded-4 shadow-sm">
+            <img src="{% static 'main/images/icons/icons8-eye-48.png' %}" alt="Можливості" width="24" /> <span class="fw-bold text-nowrap">Відкриває можливості</span>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <h3 class="fw-bold mb-2">Тут з'являється бажання вчитися.</h3>
+          <p class="italic-text text-warning fs-5">А разом із ним — впевненість у собі.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-line me-2" style="width: 30px; background-color: #e73237;"></div>
+              <span class="text-uppercase fw-bold small-text text-danger">Безпека</span>
+            </div>
+
+            <h2 class="display-5 fw-bold mb-4">Основа <span class="text-danger">довіри</span></h2>
+
+            <p class="text-muted mb-5">Безпека дітей — наш безумовний пріоритет. Ми створили простір, де діти можуть навчатися впевнено і спокійно.</p>
+
+            <div class="safety-main-card p-5 rounded-5 border-0">
+              <div class="icon-circle bg-white shadow-sm mb-4">
+                <img src="{% static 'main/images/icons/icons8-shield-48.png' %}" alt="Безпечне середовище" width="24" />
+              </div>
+              <h3 class="h4 fw-bold mb-3">Безпечне середовище</h3>
+              <p class="text-muted mb-0">Власне укриття, контрольований доступ, відеоспостереження та постійний нагляд за безпекою дітей.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-line me-2" style="width: 30px; background-color: #f7a100;"></div>
+              <span class="text-uppercase fw-bold small-text text-warning">Стабільність</span>
+            </div>
+
+            <h2 class="display-5 fw-bold mb-4">Навчання, яке <span class="text-warning">не зупиняється</span></h2>
+
+            <p class="text-muted mb-4">Ми забезпечили можливість стабільного навчального процесу навіть у складних умовах.</p>
+
+            <div class="stability-list d-flex flex-column gap-3 mb-4">
+              <div class="learning-card p-3 d-flex align-items-center gap-3 rounded-4">
+                <div class="item-icon bg-warning-light p-2 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-battery-60.png' %}" alt="Живлення" width="24" />
+                </div>
+                <span class="fw-semibold">Резервні джерела живлення</span>
+              </div>
+
+              <div class="learning-card p-3 d-flex align-items-center gap-3 rounded-4">
+                <div class="item-icon bg-info-light p-2 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-light-48_blue.png' %}" alt="Освітлення" width="24" />
+                </div>
+                <span class="fw-semibold">Забезпечене освітлення класів</span>
+              </div>
+
+              <div class="learning-card p-3 d-flex align-items-center gap-3 rounded-4">
+                <div class="item-icon bg-success-light p-2 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-lightning-bolt-48_green.png' %}" alt="Техніка" width="24" />
+                </div>
+                <span class="fw-semibold">Підтримка роботи техніки</span>
+              </div>
+
+              <div class="learning-card p-3 d-flex align-items-center gap-3 rounded-4">
+                <div class="item-icon bg-warning-light p-2 rounded-3">
+                  <img src="{% static 'main/images/icons/icons8-temperature-48.png' %}" alt="Температура" width="24" />
+                </div>
+                <span class="fw-semibold">Комфортна температура</span>
+              </div>
+            </div>
+
+            <div class="parents-note p-4 rounded-4" style="background-color: #fffaf2;">
+              <p class="mb-0">
+                <strong>Для батьків це означає:</strong><br />
+                <span class="text-muted">Спокій і передбачуваність.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="enrollment-wrapper p-4 p-md-5 rounded-5 text-center shadow-sm">
+          <div class="d-flex justify-content-center mb-4">
+            <div class="status-badge d-flex align-items-center px-3 py-2 rounded-pill">
+              <span class="status-dot me-2"></span>
+              <span class="status-text fw-bold">НАБІР ВІДКРИТО</span>
+            </div>
+          </div>
+
+          <h2 class="enrollment-title fw-bold mb-3">Набір на новий навчальний рік</h2>
+          <p class="enrollment-subtitle text-muted mb-5">Кількість місць у класах обмежена.</p>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+            <button class="pill-btn">до 1 класу</button>
+            <button class="pill-btn">до 5 класу</button>
+            <button class="pill-btn">до 10 класу</button>
+            <button class="pill-btn">переведення</button>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="action-card p-4 rounded-4 bg-white shadow-sm border-0 h-100">
+                <h4 class="fw-bold mb-2">Пробний день</h4>
+                <p class="small text-muted mb-0">Відчуйте атмосферу</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="action-card p-4 rounded-4 bg-white shadow-sm border-0 h-100">
+                <h4 class="fw-bold mb-2">Знайомство</h4>
+                <p class="small text-muted mb-0">Перегляд ліцею</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="action-card p-4 rounded-4 bg-white shadow-sm border-0 h-100">
+                <h4 class="fw-bold mb-2">Консультація</h4>
+                <p class="small text-muted mb-0">Індивідуальна розмова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact-us" class="footer-section py-5 text-white" style="background-color: #111827;">
+      <div class="container py-5">
+        <div class="row align-items-start g-4">
+          <div class="col-lg-7">
+            <h2 class="display-4 fw-bold mb-3 text-white">Запрошуємо <br /> <span style="color: #f7a100;">до ліцею</span></h2>
+            <p class="text-secondary mb-5" style="max-width: 500px;">Ми розуміємо, що вибір школи — важливе рішення. Тому пропонуємо пробний день, знайомство з ліцеєм та індивідуальну консультацію.</p>
+
+            <form id="ajax-contact-form" method="POST" class="d-flex flex-column flex-md-row gap-3 mt-4" style="max-width: 600px;">
+              {% csrf_token %}
+              {{ form.contact_info }}
+              <button type="submit" class="btn btn-primary-footer py-3 px-5 d-flex align-items-center justify-content-center gap-2">Зв'язатися <i class="bi bi-arrow-right"></i></button>
+            </form>
+
+            <div id="form-response" class="mt-3" style="display: none; color: #28a745; font-weight: bold;">Дякуємо! Ваша заявка прийнята.</div>
+          </div>
+
+          <div class="col-lg-5 text-lg-end">
+            <div class="mb-5">
+              <img src="{% static 'main/images/logo.png' %}" alt="АйДіти" width="150" class="mb-4" />
+            </div>
+
+            <div class="info-block mb-4">
+              <p class="small text-secondary text-uppercase fw-bold mb-1">Заклад</p>
+              <p class="mb-0">Приватний ліцей повної загальної середньої освіти</p>
+            </div>
+
+            <div class="info-block mb-4">
+              <p class="small text-secondary text-uppercase fw-bold mb-1">Класи</p>
+              <p class="mb-0">1 — 11 клас</p>
+            </div>
+
+            <div class="info-block">
+              <p class="small text-secondary text-uppercase fw-bold mb-1">Статус</p>
+              <p class="mb-0">Ліцензований освітній заклад</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-5 mb-4 border-secondary opacity-25" />
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <p class="small text-secondary mb-0">© 2026 Приватний ліцей «АйДіти». Усі права захищені.</p>
+          <a href="#" class="back-to-top d-flex align-items-center justify-content-center text-white text-decoration-none"><img src="{% static 'main/images/icons/icons8-arrow-up-50.png' %}" alt="Вгору" width="24" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const navLinks = document.querySelectorAll('.nav-link')
+      const menuToggle = document.getElementById('offcanvasNavbar')
+      
+      if (menuToggle) {
+        const bsOffcanvas = new bootstrap.Offcanvas(menuToggle)
+      
+        navLinks.forEach((l) => {
+          l.addEventListener('click', () => {
+            bsOffcanvas.hide()
+          })
+        })
+      }
+    </script>
+    <script>
+      document.getElementById('ajax-contact-form').addEventListener('submit', function (e) {
+        e.preventDefault()
+      
+        const formData = new FormData(this)
+        const responseDiv = document.getElementById('form-response')
+      
+        fetch("{% url 'home' %}", {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              responseDiv.style.display = 'block'
+              this.reset()
+            }
+          })
+          .catch((error) => console.error('Помилка:', error))
+      })
+    </script>
+  </body>
+</html>
