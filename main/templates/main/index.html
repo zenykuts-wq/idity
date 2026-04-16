@@ -593,18 +593,20 @@
 
           <div class="col-lg-7">
             <div class="row g-3">
-              <div class="col-7">
-                <div class="studio-img-wrapper main-img">
-                  <img src="{% static 'main/images/studio_main.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Головне фото студії" />
+              <div class="col-12 col-lg-7 d-flex justify-content-center">
+                <div class="main-img w-90 w-lg-100" style="height: auto !important; position: relative !important; max-height: 350px;">
+                  <img src="{% static 'main/images/studio_main.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Головне фото" style="display: block;" />
                 </div>
               </div>
-              <div class="col-5">
-                <div class="d-flex flex-column gap-3 h-100">
-                  <div class="studio-img-wrapper small-img flex-grow-1">
-                    <img src="{% static 'main/images/studio_small1.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Заняття" />
+
+              <div class="col-12 col-lg-5">
+                <div class="d-flex flex-row flex-lg-column gap-3 h-100" style="position: relative !important;">
+                  <div class="small-img flex-grow-1" style="height: auto !important; position: relative !important; min-height: 120px;">
+                    <img src="{% static 'main/images/studio_small1.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Заняття" style="display: block;" />
                   </div>
-                  <div class="studio-img-wrapper small-img flex-grow-1">
-                    <img src="{% static 'main/images/studio_small2.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Творчість" />
+
+                  <div class="small-img flex-grow-1" style="height: auto !important; position: relative !important; min-height: 120px;">
+                    <img src="{% static 'main/images/studio_small2.jpg' %}" class="img-fluid rounded-4 shadow-sm w-100 h-100 object-fit-cover" alt="Творчість" style="display: block;" />
                   </div>
                 </div>
               </div>

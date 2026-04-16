@@ -318,12 +318,18 @@ h3,
 
 
 
-.main-img {
-    height: 500px;
+.main-img, .small-img {
+    height: auto;
 }
 
-.small-img {
-    height: calc(250px - 0.5rem);
+@media (min-width: 992px) {
+    .main-img {
+        height: 500px; 
+    }
+
+    .small-img {
+        height: calc(250px - 0.5rem); 
+    }
 }
 
 
